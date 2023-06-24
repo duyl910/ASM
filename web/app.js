@@ -9,7 +9,8 @@ var usersRouter = require('./routes/users');
 
 // A. Tạo router (1 model -> 1 router)
 var toyRouter = require ('./routes/toy');
-var AboutRouter = require('./routes/About');
+var toy1Router = require('./routes/toy1');
+
 
 var app = express();
 
@@ -39,7 +40,8 @@ app.use('/users', usersRouter);
 
 //config Routers
 app.use('/toy', toyRouter)
-app.use('/About', AboutRouter)
+app.use('/toy1', toy1Router);
+
 
 
 // catch 404 and forward to error handler
